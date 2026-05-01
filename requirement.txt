@@ -1,2 +1,2 @@
-Python Version: 3.11.2 
-Tkinter Version: 8.6
+customtkinter>=5.2.0
+python-version>=3.11.0
