@@ -1,59 +1,127 @@
-# Multi Folder Creation Tool
+# 📁 Multi-Folder Creator — JavaScript Edition
 
-A modern desktop application built with Python and CustomTkinter to automate the creation of complex folder structures. This tool allows users to generate multiple folders simultaneously by providing a list of paths manually or via a text file.
+**Create complex folder structures in seconds. Preview them instantly. Download everything as a ZIP archive.**
 
-## Features
+Multi-Folder Creator is a lightweight, browser-based tool that helps developers plan and generate nested directory structures without manually creating folders one by one. Use predefined templates or import a text file containing directory paths, preview the structure, and download it as a ZIP archive.
 
-- **Recursive Folder Creation:** Create nested directory structures automatically.
-- **Batch Processing:** Enter multiple paths at once, one per line.
-- **File Integration:** Load folder paths directly from `.txt` files.
-- **Modern UI:** Clean, dark-themed interface with responsive layout.
-- **Cross-Platform Compatibility:** Normalizes paths to work across Windows, macOS, and Linux.
-- **Status Logging:** Real-time feedback on folder creation success and errors.
+**[Live Demo](https://abyshergill.github.io/Multi_Folder_Creator/)** · **[Source Code](https://github.com/abyshergill/Multi_Folder_Creator)**
 
-## Preview
+![](images/main_window.png)
 
-### Main Interface
-![Widget picture](images/main.png)
+## ✨ Features
 
-## Installation
+- **📂 Nested Folder Creation** — Define multi-level directory structures quickly and easily.
+- **⚡ Ready-to-Use Templates** — Start with predefined structures for modern web applications, data science projects, and Python modules.
+- **👀 Live Structure Preview** — Visualize your directory hierarchy before generating the ZIP archive.
+- **📄 Import Folder Structures** — Drag and drop or browse for `.txt` files containing directory paths.
+- **📦 ZIP Archive Generation** — Package the generated directory structure into a single downloadable ZIP file.
+- **🌐 Browser-Based** — Use the tool directly in your browser without setting up a backend server.
 
-### Prerequisites
-- Python 3.11 or higher
-- `pip` (Python package manager)
+## 🚀 Getting Started
 
-### Setup
-1. Clone or download this repository.
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirement.txt
-   ```
+### Option 1: Use the Live Demo
 
-## Usage
+Open the application in your browser:
 
-1. **Launch the Application:**
-   Run the `source_code.py` script:
-   ```bash
-   python source_code.py
-   ```
-   *Note: If you are on Windows, you can also use the provided `main.exe`.*
+**[Launch Multi-Folder Creator](https://abyshergill.github.io/Multi_Folder_Creator/)**
 
-2. **Select Root Directory:**
-   Click the **Browse** button to select the parent folder where you want your new directories to be created.
+### Option 2: Run Locally
 
-3. **Input Folder Paths:**
-   - Type the desired paths in the main text area (one path per line).
-   - Alternatively, click **Upload .txt File** to import a list of paths.
-   - Example format: `Project/Assets/Textures`
+**1. Clone the repository**
 
-4. **Generate:**
-   Click **Generate Folders**. The status log will show the progress and any errors encountered.
+```bash
+git clone https://github.com/abyshergill/Multi_Folder_Creator.git
+```
 
-## Project Structure
-- `source_code.py`: The main application logic and UI.
-- `requirement.txt`: List of Python dependencies.
-- `images/`: Contains UI screenshots for documentation.
-- `icon/`: Application icons.
+**2. Navigate to the project directory**
 
-## License
-MIT License, Feel free to modify. 
+```bash
+cd Multi_Folder_Creator
+```
+
+**3. Launch the application**
+
+Open `index.html` in your web browser.
+
+No Node.js installation or backend server is required for the basic browser-based workflow.
+
+## 🛠️ How to Use
+
+1. Open Multi-Folder Creator in your browser.
+2. Select a predefined template or enter your desired directory structure.
+3. Alternatively, import a `.txt` file containing directory paths.
+4. Review the live preview to verify the folder hierarchy.
+5. Generate and download the ZIP archive.
+6. Extract the archive to use your newly organized directory structure.
+
+## 📝 Example Folder Structure
+
+For example, a generated project structure could look like this:
+
+```text
+my-project/
+├── src/
+│   ├── components/
+│   ├── services/
+│   └── utils/
+├── tests/
+├── docs/
+├── assets/
+└── README.md
+```
+
+This is an illustrative example of a directory structure the tool can help you organize.
+
+## 🧰 Technology Stack
+
+- **HTML5** — Application structure
+- **CSS3** — Styling and layout
+- **JavaScript** — Application logic and directory-tree generation
+- **JSZip** — Creating ZIP archives directly in the browser
+
+## 📂 Project Structure
+
+```text
+Multifolder_Creation_Javascript_Edition/
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── index.html
+└── README.md
+```
+
+## 🎯 Use Cases
+
+Multi-Folder Creator can help with:
+
+- Setting up new software projects.
+- Creating standardized directory structures for teams.
+- Organizing Python, data science, and web development projects.
+- Preparing reusable project templates.
+- Generating nested directory structures for repetitive workflows.
+
+## 🤝 Contributing
+
+Contributions, suggestions, and bug reports are welcome!
+
+1. Fork this repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Test the application in your browser.
+5. Submit a pull request describing your improvements.
+
+## 📄 License
+
+Please refer to the repository's license file, if available, for the applicable usage and distribution terms.
+
+## 👨‍💻 Author
+
+**Abyshergill**
+
+- GitHub: [@abyshergill](https://github.com/abyshergill)
+- Project: [Multi-Folder Creator — JavaScript Edition](https://github.com/abyshergill//Multi_Folder_Creator)
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star!

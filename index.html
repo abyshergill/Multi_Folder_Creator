@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Multi-Folder Creator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Multi-Folder Creator</h1>
+    <div class="subtitle">Quickly map out, preview, and generate nested directory architectures into a single ZIP archive.</div>
+    
+    <div class="section-title">Quick Template Presets</div>
+    <div class="presets-grid">
+        <div class="preset-btn" onclick="loadPreset('web')">🌐 Modern Web App</div>
+        <div class="preset-btn" onclick="loadPreset('data')">📊 Data Science</div>
+        <div class="preset-btn" onclick="loadPreset('python')">🐍 Python Module</div>
+    </div>
+
+    <div class="section-title">Import Structure</div>
+    <div class="upload-zone" id="dropZone">
+        <p>Drag & drop your <b>.txt configuration file</b> here, or <b>browse files</b></p>
+        <input type="file" id="fileInput" accept=".txt">
+    </div>
+
+    <div class="section-title">
+        <span>Customize Directory Paths</span>
+    </div>
+    <textarea id="folderPaths" placeholder="Enter relative paths (e.g., project/src/components)&#10;One unique path mapping rule per line..."></textarea>
+    <div class="textarea-footer">
+        <span>Paths process recursively via forward slashes (/)</span>
+        <span class="text-link" onclick="clearWorkspace()">Clear Workspace</span>
+    </div>
+
+    <div class="section-title">Live structural architecture preview</div>
+    <div class="preview-box" id="treePreview">
+        <span style="color: var(--text-muted); font-style: italic;">Your live folder blueprint will appear here...</span>
+    </div>
+    
+    <button id="generateBtn" class="main-btn">
+        <span>📦</span> Generate & Download ZIP Architecture
+    </button>
+    
+    <div id="status" class="status"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
